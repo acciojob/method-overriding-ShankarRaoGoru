@@ -7,14 +7,13 @@ public class Main {
     }
 }
 class A{
-    void meth(){
-        System.out.println("Invoking method from class A");
+    public String meth(){
+        return "Invoking method from class A";
     }
 }
 class B extends A{
     @Override
-    void meth(){
-        System.out.println("Method is overridden in Extendend class B");
+    public String  meth(){
+        return "Method is overridden in Extendend class B";
     }
-
 }
